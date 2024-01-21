@@ -1,0 +1,84 @@
+.header
+    position: relative
+    padding-top: 40px
+    background-color: var(--footer-bg)
+
+    // Header background all size ----------------
+    
+    // Background
+    background-image: url('./../img/header/header-bg.jpg')
+    background-size: cover
+
+    // Proportion
+    aspect-ratio: 1440 / 1084
+
+    // Retina call from mixin
+    @include retina-bg (url('./../img/header/header-bg@2x.jpg'))
+
+    // text
+    color: var(--header-text-color)
+    a
+        color: var(--header-text-color)
+
+.header__nav
+    margin-bottom: 86px
+
+.header__content
+    text-align: center
+
+    p
+        max-width: 606px
+        margin: 0 auto
+
+        // Text
+        color: #FFF
+        opacity: .8
+        font-size: 24px
+        line-height: 160%
+
+.header__title
+    margin-bottom: 14px
+
+    // Text
+    font-size: 80px
+    font-weight: 700
+    line-height: 130%
+    letter-spacing: -0.8px
+    text-transform: capitalize
+
+.header__search
+    margin: 45px auto 0
+
+// DOTS ON BACKGROUND
+.header__dot-sofa
+    position: absolute
+    // POSITIONS FROM CALC
+    left: calc(296 * 100% / ( 1440 - 30 ) ) // 1440 = 100%, 296 = x, // x = 296 * 100% / 1440
+    top: calc(685 * 100% / ( 1084 - 9 ) ) // 1084 = 100%, 685 = x, // x = 685 * 100% / 1075
+
+    transform: translate(-50%, -50%)
+
+
+.header__dot-vase
+    position: absolute
+    // POSITIONS FROM CALC
+    left: calc(114 * 100% / 1440)
+    top: calc(754 * 100% / 1084)
+
+    transform: translate(-50%, -50%)
+
+.header__dot-item
+    position: absolute
+    // POSITIONS FROM CALC
+    left: calc(810 * 100% / 1440 )
+    top: calc(787 * 100% / 1084) 
+
+    transform: translate(-50%, -50%)
+
+.header__dot-wall
+    position: absolute
+    // POSITIONS FROM CALC
+    right: calc(47 * 100% / 1440)
+    top: calc(821 * 100% / 1084) 
+
+    transform: translate(50%, -50%)

@@ -1,0 +1,29 @@
+section.products 
+    .container
+        h2.products__title Best Selling Product
+        .products__tabs
+            .tab-controls
+                button.tab-controls__btn.tab-controls__btn--active Chair
+                button.tab-controls__btn Beds
+                button.tab-controls__btn Sofa
+                button.tab-controls__btn Lamp
+        .products__slider
+
+            .card
+                .card__photo
+                    img(src="./img/products/chair-01.png", srcset="./img/products/chair-01@2x.png" alt="Chair").card__img
+                .card__desc
+                    a(href="#!").card__category Chair
+                    h3.card__title Sakarias Armchair
+                    .card__rating
+                        img(src="./img/icons/star-on.svg", alt="star")
+                        img(src="./img/icons/star-on.svg", alt="star")
+                        img(src="./img/icons/star-on.svg", alt="star")
+                        img(src="./img/icons/star-on.svg", alt="star")
+                        img(src="./img/icons/star-off.svg", alt="star")
+                    .card__footer
+                        .card__price $396
+                        button.card__btn Add to cart
+
+        .products__link
+            a(href="#!").read-more.read-more--large View All

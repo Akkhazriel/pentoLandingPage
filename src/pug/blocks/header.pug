@@ -1,0 +1,100 @@
+header.header
+    //- Container
+    .container
+        //- Navigation
+        .header__nav
+            nav.nav
+                //- Logo
+                a(href="#").nav__logo Panto 
+
+                //- Links
+                ul.nav-list
+                    li.nav-list__item
+                        a(href="#!").nav-list__link Furniture
+                    li.nav-list__item
+                        a(href="#!").nav-list__link Shop
+                    li.nav-list__item
+                        a(href="#!").nav-list__link About Us
+                    li.nav-list__item
+                        a(href="#!").nav-list__link Contact
+        
+                //- Cart
+                a(href="#!").cart
+                    img(src="./img/icons/cart.svg", alt="Cart").cart__img
+                    .cart__count 0
+
+        //- Content
+        .header__content
+            //- Title
+            h1.header__title Make your interior more minimalistic & modern
+            //- Description
+            p Turn your room with panto into a lot more minimalist and modern with ease and speed
+            //- Form
+            form(action="").search-form.header__search
+                input(placeholder="Search furniture" type="text" autocompleate="off").search-form__input
+                button.search-form__btn
+                    img(src="./img/icons/search.svg", alt="Search")
+
+        //- Dots on background UI
+        .header__dot-sofa
+            button.info-dot
+                .info-dot__circle 
+                .info-dot__radius
+            .info-hint.none
+                label
+                    input(type="radio" name="sofa-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--orange
+                label
+                    input(type="radio" name="sofa-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--biruze
+                label
+                    input(type="radio" name="sofa-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--gray
+
+
+        .header__dot-vase
+            button.info-dot
+                .info-dot__circle 
+                .info-dot__radius
+            .info-hint.none
+                label
+                    input(type="radio" name="vase-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--orange
+                label
+                    input(type="radio" name="vase-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--biruze
+                label
+                    input(type="radio" name="vase-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--gray
+
+
+        .header__dot-item
+            button.info-dot
+                .info-dot__circle 
+                .info-dot__radius
+            .info-hint.none
+                label
+                    input(type="radio" name="item-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--orange
+                label
+                    input(type="radio" name="item-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--biruze
+                label
+                    input(type="radio" name="item-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--gray
+
+
+        .header__dot-wall
+            button.info-dot
+                .info-dot__circle 
+                .info-dot__radius
+            .info-hint.none
+                label
+                    input(type="radio" name="wall-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--orange
+                label
+                    input(type="radio" name="wall-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--biruze
+                label
+                    input(type="radio" name="wall-color").info-hint__radio
+                    .info-hint__radio-fake.info-hint__radio-fake--gray
