@@ -11,7 +11,18 @@ header.header
                 //- Links
                 ul.nav-list
                     li.nav-list__item
-                        a(href="#!").nav-list__link Furniture
+                        a(href="#!").nav-list__link.nav-list__link--dropdown Furniture
+                        .nav-list__sub-nav
+                            ul.sub-nav
+                                li.sub-nav__item
+                                    a(href="#!").sub-nav__link Home 
+                                li.sub-nav__item
+                                    a(href="#!").sub-nav__link Services 
+                                li.sub-nav__item
+                                    a(href="#!").sub-nav__link Products 
+                                li.sub-nav__item
+                                    a(href="#!").sub-nav__link Contacts 
+
                     li.nav-list__item
                         a(href="#!").nav-list__link Shop
                     li.nav-list__item

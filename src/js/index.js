@@ -1,6 +1,10 @@
 import { infoHintLoaded } from "./modules/info-hint";
-import { swiperLoad } from "./modules/swiper";
+import { swiper } from "./modules/swiper";
+import { tabControlsLoaded } from "./modules/tab-controls";
 
 // Start infoHintLoaded function for activate ToolTips
 infoHintLoaded();
-swiperLoad();
+// Start swiper on page
+swiper();
+//  Tab conrols script
+tabControlsLoaded();
