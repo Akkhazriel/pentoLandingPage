@@ -10,6 +10,12 @@ export const infoHintLoaded = window.addEventListener('DOMContentLoaded', () => 
     // Show Tool Tips on the click
     function showHint (e) {
         e.stopPropagation();
+        
+        // HIDE ALL HINTS
+        for (let hint of infoHints) {
+            hint.classList.add('none');
+        }
+
         // Search Parent Node and give toggle-btn
         this.parentNode.querySelector('.info-hint').classList.toggle('none');
     }

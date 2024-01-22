@@ -35,6 +35,9 @@ header.header
                     img(src="./img/icons/cart.svg", alt="Cart").cart__img
                     .cart__count 0
 
+                button.nav__btn#open-mobile-nav-btn
+                    img(src="./img/icons/mobile-nav.svg", alt="Open nav")
+
         //- Content
         .header__content
             //- Title
@@ -110,3 +113,32 @@ header.header
                 label
                     input(type="radio" name="wall-color").info-hint__radio
                     .info-hint__radio-fake.info-hint__radio-fake--gray
+.mobile-nav-wrapper#mobile-nav
+
+        .mobile-nav-header
+            a(href="#!").mobile-cart
+                .cart
+                    img(src="./img/icons/cart.svg", alt="Cart").cart__img
+                    .cart__count 0
+                | Cart
+            button.mobile-nav-btn-close#close-mobile-nav-btn
+                img(src="./img/icons/close.svg", alt="Close")
+        ul.mobile-nav
+            li.mobile-nav__item
+                a(href="#!").mobile-nav__link.mobile-nav__link--dropdown Furniture
+                ul.mobile-sub-nav
+                    li.mobile-sub-nav__item
+                        a(href="#!").mobile-sub-nav__link Home 
+                    li.sub-nav__item
+                        a(href="#!").mobile-sub-nav__link Services 
+                    li.sub-nav__item
+                        a(href="#!").mobile-sub-nav__link Products 
+                    li.sub-nav__item
+                        a(href="#!").mobile-sub-nav__link Contacts 
+
+            li.mobile-nav__item
+                a(href="#!").mobile-nav__link Shop
+            li.mobile-nav__item
+                a(href="#!").mobile-nav__link About Us
+            li.mobile-nav__item
+                a(href="#!").mobile-nav__link Contact
